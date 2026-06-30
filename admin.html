@@ -1,0 +1,84 @@
+<!-- ================= ADMIN PORTAL PAGE ================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Portal - Faizan School System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Admin CSS File -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<section class="login-section" id="loginSection">
+
+  <div class="login-box">
+
+    <h2>Admin Login</h2>
+
+    <input type="text" id="username" placeholder="Enter Username">
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="loginAdmin()">Login</button>
+
+    <p id="loginMessage"></p>
+
+  </div>
+
+</section>
+
+<!-- ================= DASHBOARD SECTION ================= -->
+
+<section class="dashboard" id="dashboard">
+
+  <div class="admin-header">
+
+    <h2>Faizan School System Admin Dashboard</h2>
+
+    <button onclick="logoutAdmin()">Logout</button>
+
+  </div>
+
+  <!-- ================= ADD DATA SECTION ================= -->
+
+  <div class="form-box">
+
+    <h3>Add Website Data</h3>
+
+    <select id="sectionName">
+      <option value="Academics">Academics</option>
+      <option value="Gallery">Gallery</option>
+      <option value="About Us">About Us</option>
+      <option value="Contact">Contact</option>
+    </select>
+
+    <input type="text" id="dataTitle" placeholder="Enter Title">
+
+    <textarea id="dataDescription" placeholder="Enter Description"></textarea>
+
+    <button onclick="addData()">Add Data</button>
+
+  </div>
+
+  <!-- ================= DATA LIST SECTION ================= -->
+
+  <div class="data-list">
+
+    <h3>Added Website Data</h3>
+
+    <div id="dataContainer"></div>
+
+  </div>
+
+</section>
+
+<!-- Admin JS File -->
+<script src="admin.js"></script>
+
+</body>
+</html>
